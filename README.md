@@ -29,25 +29,4 @@ du programme.
 * Aucun code commenté ne sera commité dans la branche principale 
 release/main
 
-## Equipe Drone
-
-Vous aurez pour mission de créer un programme console avec Qt en C++ qui 
-charge le fichier DroneIMG37337.png et y ajoute via un algorithme au choix 
-autre que steghide, les coordonnées GPS 37°42'41.9"S 144°59'33.0"E.
-Le fichier sera envoyé sur le broker : mqtt://broker.emqx.io:1883, topic 
-/ynov/bordeaux/NomDuGitHubDuGroupe avec un QoS 2. 
-Le programme devra être le plus léger possible, chaque tentative 
-d’optimisation faisant l’objet de la création d’une branche dans le GitHub.
-
-## Equipe Base
-
-Vous aurez pour mission de créer un programme graphique avec QtDesign en 
-C++ qui se connecte au broker : mqtt://broker.emqx.io:1883, et s’abonne au 
-topic:/ynov/bordeaux/NomDuGitHubDuGroupe avec un QoS 2.
-Une fois le fichier récupéré, vous devrez découvrir les coordonnées cachées 
-dans l’image et afficher l’image, ainsi que les coordonnées GPS. 
-Le programme devra être le plus léger possible, chaque tentative 
-d’optimisation faisant l’objet de la création d’une branche dans le GitHub.
-
-
 ## Installation
