@@ -29,4 +29,4 @@ du programme.
 * Aucun code commenté ne sera commité dans la branche principale 
 release/main
 
-## Installation
+## Installation 
