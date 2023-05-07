@@ -14,9 +14,9 @@ ImageThread::ImageThread(QObject *parent) :
 void ImageThread::run()
 {
     while(true) {
-        m_pixmap.load("image.png"); // Charger l'image
-        emit newImage(m_pixmap); // Envoyer le signal avec l'image chargée
-        sleep(1); // Attendre 1 seconde
+        m_pixmap.load("image.png"); 
+        emit newImage(m_pixmap); 
+        sleep(1); 
     }
 }
 
@@ -26,10 +26,8 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
     MqttSubscriber subscriber;
-    // Connecter le signal newImage de la classe ImageThread au slot onNewImage de la classe MainWindow
     connect(&m_thread, &ImageThread::newImage, this, &MainWindow::onNewImage);
 
-    // Démarrer le thread
     m_thread.start();
 }
 
@@ -44,7 +42,6 @@ void MainWindow::onNewImage(const QPixmap &pixmap)
 {
     QImage image("image.png");
     Steganography steg;
-    // Afficher l'image dans le QLabel
     ui->label_img->setPixmap(pixmap);
     QByteArray extractedMessage = steg.decode(image);
     QString message = QString::fromUtf8(extractedMessage);
