@@ -70,7 +70,7 @@ QByteArray Steganography::decode(const QImage &image)
             c |= extractedBits.at(i + j) << j;
         }
         extractedMessage.append(c);
-        if (c == ';') break; // Stopper la boucle si le caractère ';' est atteint
+        if (c == ';') break; // Stopper la boucle si le caractère ';' est atteint 
     }
 
     return extractedMessage;
