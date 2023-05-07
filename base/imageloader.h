@@ -20,4 +20,4 @@ private:
     QString filename;
 };
 
-#endif // IMAGELOADER_H
+#endif
