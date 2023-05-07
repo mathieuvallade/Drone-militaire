@@ -3,7 +3,9 @@
 
 #include <QtGui>
 
-class Steganography {
+class Steganography 
+{
+
 public:
     static bool encode(QImage &image, const QByteArray &message);
     static QByteArray decode(const QImage &image);
