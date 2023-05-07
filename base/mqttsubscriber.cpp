@@ -13,12 +13,10 @@ MqttSubscriber::MqttSubscriber()
     if ((rc = MQTTClient_connect(client, &conn_opts)) != MQTTCLIENT_SUCCESS)
     {
         QString errorMessage = QString("Failed to connect to MQTT broker: %1").arg(rc);
-        //qDebug() << errorMessage;
     }
     else
     {
         QString successMessage = QString("Connected to MQTT broker at tcp://broker.emqx.io:1883");
-        //qDebug() << successMessage;
 
         MQTTClient_subscribe(client, "/ynov/bordeaux/Drone-militaire", 0);
     }
@@ -33,11 +31,9 @@ int MqttSubscriber::messageArrived(void *context, char *topicName, int topicLen,
     QString imageData = content.split(",")[1];
     QByteArray imageDataBytes = QByteArray::fromBase64(imageData.toUtf8());
 
-    // créer l'objet QImage à partir des données de l'image
     QImage image;
     image.loadFromData(imageDataBytes);
 
-    // enregistrer l'image en tant que fichier PNG
     QFile file("image.png");
     file.open(QIODevice::WriteOnly);
     image.save(&file, "PNG");
