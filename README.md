@@ -3,7 +3,7 @@
 
 ![logo](https://user-images.githubusercontent.com/60011578/236699551-7745a4e5-4dee-4b0c-b410-08744eef314c.png?width=500&height=500)
 
-[![GitHub stars](https://img.shields.io/github/stars/themlphdstudent/awesome-github-profile-readme-templates.svg)](https://www.youtube.com/watch?v=2Z4m4lnjxkY)
+[![GitHub stars](https://img.shields.io/github/stars/themlphdstudent/awesome-github-profile-readme-templates.svg)](https://youtu.be/dQw4w9WgXcQ)
 [![GitHub contributors](https://img.shields.io/github/contributors/themlphdstudent/awesome-github-profile-readme-templates.svg?color=blue)](https://lesjoiesducode.fr/content/044/github-copilot-anakin-meme.jpg)
 
 ## Contexte
