@@ -14,4 +14,4 @@ private:
     static int messageArrived(void *context, char *topicName, int topicLen, MQTTClient_message *message);
 };
 
-#endif // MQTTSUBSCRIBER_H
+#endif
